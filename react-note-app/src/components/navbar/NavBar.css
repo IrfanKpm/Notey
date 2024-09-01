@@ -1,0 +1,142 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(227, 227, 218);
+  padding: 10px 20px;
+  color: rgb(124, 17, 224);
+  flex-wrap: wrap;
+}
+
+nav .logo {
+  margin-left: 20px;
+  font-size: 42px; 
+}
+nav .logo a {
+  text-decoration: none;
+  color: rgb(124, 17, 224); 
+}
+
+nav .logo a:visited,
+nav .logo a:active {
+  color: rgb(124, 17, 224); 
+}
+nav .form-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+nav form {
+  padding: 8px;
+  border: 2px solid rgb(124, 17, 224); 
+  border-radius: 6px;
+  background: white; 
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  align-items: center;
+}
+
+nav form input {
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  color: rgb(124, 17, 224);
+}
+
+nav form button {
+  padding: 3px;
+  outline: none;
+  border: none;
+  background: white;
+}
+
+nav form button .MagnifyingGlass {
+  font-size: 18px;
+  color: rgb(124, 17, 224); 
+}
+
+nav .add-note {
+  padding: 6px;
+  color: white;
+  background-color: rgb(124, 17, 224);
+  border: 2px solid rgb(124, 17, 224);
+  border-radius: 10px;
+  margin-right: 20px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+nav .add-note a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: block;
+}
+
+nav .add-note:hover {
+  background-color: white;
+  color: rgb(124, 17, 224);
+  border-color: rgb(124, 17, 224);
+}
+
+nav .add-note:hover a {
+  color: rgb(124, 17, 224);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  nav .logo {
+      margin-left: 10px;
+      font-size: 33.6px; 
+  }
+
+  nav .form-container {
+      order: 3;
+      width: 100%;
+      justify-content: center;
+  }
+
+  nav form {
+      max-width: 100%;
+      margin: 0 10px;
+  }
+
+  nav .add-note {
+      margin-right: 10px;
+      margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav .logo {
+      margin-left: 10px;
+      font-size: 25.2px; 
+  }
+
+  nav .form-container {
+      width: 100%;
+      margin: 10px 0;
+  }
+
+  nav form {
+      max-width: 100%;
+      margin: 0 10px;
+  }
+
+  nav .add-note {
+      margin-right: 10px;
+      margin-top: 10px;
+      font-size: 14px;
+  }
+}

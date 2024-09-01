@@ -1,0 +1,23 @@
+:root {
+    --primary-color: rgb(124, 17, 224);
+    --background-color: rgb(218, 218, 202);
+    --white: white;
+}
+.filter-container{
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.topic{
+    height: 30px;
+    width: 300px;
+    outline: none;
+    border: none;
+    font-size: 600;
+    border: 2px solid rgb(124, 17, 224);
+    border-radius: 8px;
+    padding: 4px;
+}
+

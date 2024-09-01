@@ -1,0 +1,72 @@
+.note-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+  }
+  
+.card {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.title {
+    font-size: 24px;
+    margin-bottom: 8px; 
+}
+.title a {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+.date {
+    font-size: 14px;
+    color: #3c3b3b;
+    margin-bottom: 12px;
+}
+  
+.body {
+    font-size: 16px;
+    color: #2f2e2e;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+  
+.category {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.important-category {
+  color: rgb(143, 11, 11);
+}
+
+.business-category {
+  color: rgb(10, 16, 199);
+}
+
+.personal-category {
+  color: rgb(54, 154, 26); 
+}
+  
+.category .fa-envelope {
+    margin-right: 8px;
+}
+  
+
+@media (max-width: 768px) {
+    .note-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+  
+@media (max-width: 480px) {
+    .note-container {
+      grid-template-columns: 1fr; 
+    }
+}
+  

@@ -1,0 +1,115 @@
+.add-note-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(207, 207, 197);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: monospace;
+    margin-top: 10vh;
+}
+
+.add-note-title {
+    text-align: center;
+    color: rgb(124, 17, 224);
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.add-note-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-note-form input,
+.add-note-form textarea,
+.add-note-form select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgb(124, 17, 224);
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    color: rgb(124, 17, 224);
+    box-sizing: border-box; 
+    margin-bottom: 16px; 
+    font-family: monospace;
+}
+
+.add-note-form textarea {
+    resize: vertical; 
+}
+
+.add-note-form select {
+    background-color: white;
+    font-family: monospace;
+}
+
+.add-note-form input::placeholder,
+.add-note-form textarea::placeholder {
+    color: rgb(124, 17, 224);
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(124, 17, 224);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid rgb(124, 17, 224);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.6s ease, color 0.3s ease;
+    text-align: center; 
+    font-family: monospace;
+}
+
+.submit-button:hover {
+    background-color: rgb(82, 6, 153); 
+    color: white;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .add-note-container {
+        padding: 15px;
+    }
+
+    .add-note-title {
+        font-size: 22px;
+    }
+
+    .add-note-form input,
+    .add-note-form textarea,
+    .add-note-form select {
+        padding: 10px;
+    }
+
+    .submit-button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .add-note-container {
+        padding: 10px;
+    }
+
+    .add-note-title {
+        font-size: 20px;
+    }
+
+    .add-note-form input,
+    .add-note-form textarea,
+    .add-note-form select {
+        padding: 8px;
+    }
+
+    .submit-button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

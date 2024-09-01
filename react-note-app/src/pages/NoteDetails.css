@@ -1,0 +1,94 @@
+.note-detail {
+    background-color: white;
+    border: 2px solid rgb(124, 17, 224);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    color: black;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+  
+.note-detail .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: black;
+}
+  
+.note-detail .time {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+  
+.note-detail .time .create,
+.note-detail .time .update {
+    margin: 0;
+}
+  
+.note-detail .crud {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+.note-detail .crud .edit{
+    margin-right: 6px;
+}
+.note-detail .crud .delete{
+    margin-left: 6px;
+}
+.note-detail .crud .edit a h3,
+.note-detail .crud .delete h3{
+    margin-left: 8px;
+}
+.note-detail .crud .edit a,
+.note-detail .crud .delete {
+    color: white;
+    text-decoration: none;
+}
+  
+.note-detail .crud .edit a,
+.note-detail .crud .delete{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+}
+  
+.note-detail .crud .edit {
+    background-color: rgb(60,60,200);
+    border-radius: 8px;
+}
+  
+.note-detail .crud .delete {
+    background-color: rgb(200,60,60);
+    border-radius: 8px;
+}
+
+  
+.note-detail .crud .edit .fa-edit,
+.note-detail .crud .delete .fa-trash-alt {
+    margin-right: 5px;
+    font-size: 0.7em; /* Reduce icon size */
+}
+  
+.note-detail .crud .edit:hover,
+.note-detail .crud .delete:hover {
+    opacity: 0.8; /* Slight opacity on hover */
+}
+  
+.note-detail .content {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+
