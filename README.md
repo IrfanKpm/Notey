@@ -1,6 +1,7 @@
 # Notey App
 
 This is a full stack application with a Django REST API backend and a React frontend. The backend serves as the API provider, while the frontend allows users to interact with the data.
+
 ![img](photo-collage.png.png)
 ## Project Structure
 
